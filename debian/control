@@ -1,0 +1,36 @@
+Source: scikit-build
+Maintainer: Sebastian Reichel <sre@debian.org>
+Section: python
+Priority: optional
+Build-Depends: debhelper (>= 11~),
+               dh-python,
+               python-all,
+               python-setuptools,
+               python3-all,
+               python3-setuptools
+Standards-Version: 4.2.1
+Homepage: https://pypi.org/project/scikit-build/
+Vcs-Browser:https://github.com/scikit-build/scikit-build
+Vcs-Git: https://github.com/scikit-build/scikit-build.git
+
+Package: python-scikit-build
+Architecture: all
+Depends: ${python:Depends}, ${misc:Depends}
+Description: Improved build system generator for CPython (Python 2)
+ Better support is available for additional compilers, build systems,
+ cross compilation, and locating dependencies and determining their
+ build requirements. The scikit-build package is fundamentally just
+ glue between the setuptools Python module and CMake.
+ .
+ This is the Python 2 version of the package.
+
+Package: python3-scikit-build
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends}
+Description: Improved build system generator for CPython (Python 3)
+ Better support is available for additional compilers, build systems,
+ cross compilation, and locating dependencies and determining their
+ build requirements. The scikit-build package is fundamentally just
+ glue between the setuptools Python module and CMake.
+ .
+ This is the Python 3 version of the package.
